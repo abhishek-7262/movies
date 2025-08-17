@@ -75,7 +75,7 @@ export class Tomatoes {
     lastUpdated: Date;
 }
 
-@Schema()
+@Schema({ collection: 'movies' })
 export class Movies {
     @Prop(String)
     title: string;
